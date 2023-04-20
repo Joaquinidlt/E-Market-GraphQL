@@ -20,16 +20,16 @@ const ProductCard = ({ product }) => {
   return (
     <ProductCartContainer>
       <img src={imageUrl} alt={`${name}`} />
+      <Name>{name}</Name>
       <Footer>
-        <Name>{name}</Name>
-        <Price>{price}</Price>
+        <Price>${price}</Price>
+        <Button
+          buttonType={BUTTON_TYPE_CLASSES.inverted}
+          onClick={addProductToCart}
+        >
+          Add to card
+        </Button>
       </Footer>
-      <Button
-        buttonType={BUTTON_TYPE_CLASSES.inverted}
-        onClick={addProductToCart}
-      >
-        Add to card
-      </Button>
     </ProductCartContainer>
   );
 };
