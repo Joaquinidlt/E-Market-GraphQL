@@ -15,6 +15,7 @@ export const BaseButton = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  border-radius: 8px;
 
   &:hover {
     background-color: white;
@@ -24,12 +25,19 @@ export const BaseButton = styled.button`
 `;
 
 export const GoogleSignInButton = styled(BaseButton)`
-  background-color: #4285f4;
-  color: white;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  gap: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  color: rgb(0, 0, 0);
+  border: 1px solid #ffffff;
   &:hover {
-    background-color: #357ae8;
-    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
   }
 `;
 

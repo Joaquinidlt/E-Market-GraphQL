@@ -9,6 +9,7 @@ import {
 } from '../../utils/firebase/firebase.utils';
 
 import { SignInContainer, ButtonsContainer } from './sign-in-form.styles';
+import { FcGoogle } from 'react-icons/fc';
 
 const defaultFormFields = {
   email: '',
@@ -73,6 +74,7 @@ const SignInForm = () => {
             type='button'
             onClick={signInWithGoogle}
           >
+            <FcGoogle size={25}/>
             Sign In With Google
           </Button>
         </ButtonsContainer>

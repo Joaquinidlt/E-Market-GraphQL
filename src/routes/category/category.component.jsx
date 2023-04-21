@@ -36,6 +36,9 @@ const Category = () => {
       } = data;
       setProducts(items);
     }
+    if (error) {
+      console.log(error)
+    }
   }, [category, data]);
 
   return (
